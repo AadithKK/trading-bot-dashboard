@@ -1,0 +1,100 @@
+{
+  "trading": {
+    "mode": "paper",
+    "starting_balance": 300,
+    "max_open_positions": 5,
+    "position_size_percent": 15,
+    "stop_loss_percent": 2.5,
+    "take_profit_percent": 7,
+    "trailing_stop_percent": 1.5
+  },
+  "signals": {
+    "rsi_valid_min": 50,
+    "rsi_valid_max": 65,
+    "rsi_avoid_above": 70,
+    "rsi_avoid_below": 45,
+    "momentum_ideal_min": 0.02,
+    "momentum_ideal_max": 0.06,
+    "momentum_avoid_above": 0.08,
+    "momentum_avoid_below": 0.01,
+    "volume_ratio_threshold": 1.3,
+    "volatility_atr_min_percent": 1,
+    "volatility_atr_max_percent": 3,
+    "volatility_atr_avoid_above": 4,
+    "min_score_for_ai": 75,
+    "auto_approve_score": 85,
+    "weak_signal_score": 65
+  },
+  "thresholds": {
+    "trend_required": true,
+    "volume_required": true,
+    "relative_strength_required": true,
+    "min_bars_for_indicators": 100
+  },
+  "market": {
+    "skip_weekends": true,
+    "skip_market_closed": true,
+    "market_open_hour": 9,
+    "market_open_minute": 30,
+    "market_close_hour": 16,
+    "market_close_minute": 0,
+    "timezone": "US/Eastern"
+  },
+  "watchlist": {
+    "core_symbols": ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN", "META", "SPY", "QQQ", "XLF", "XLE", "XLV", "SMH", "IWM"],
+    "include_dynamic": true,
+    "dynamic_sources": ["gainers", "volume_leaders"],
+    "total_watchlist_target": 80,
+    "ai_review_cap": 15
+  },
+  "ollama": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "model": "gemma2:9b",
+    "timeout_seconds": 30,
+    "fallback_on_error": true
+  },
+  "data_source": "finnhub",
+  "finnhub": {
+    "api_key": "d7g1g3pr01qqb8ri168gd7g1g3pr01qqb8ri1690",
+    "base_url": "https://finnhub.io/api/v1"
+  },
+  "supabase": {
+    "url": "https://ezalxvzpmrhrbncmqgjc.supabase.co",
+    "anon_key": "sb_publishable_gSlBrJ_mrdoOLHATi4tGAg_8ViffrQs",
+    "enabled": true
+  },
+  "screening": {
+    "max_stocks": 500,
+    "min_volume": 1000000,
+    "min_price": 5,
+    "max_price": 500,
+    "min_score": 70
+  },
+  "timeframe": "1d",
+  "feedback": {
+    "min_trades_for_analysis": 10,
+    "min_trades_for_strong_feedback": 20,
+    "auto_apply_suggestions": false
+  },
+  "scheduler": {
+    "enabled": true,
+    "run_time": "08:20",
+    "run_on_trading_days_only": true
+  },
+  "github": {
+    "enabled": true,
+    "repo_path": null,
+    "auto_push": true,
+    "commit_message_template": "Trading cycle {date}: {symbol_count} signals, {trade_count} trades executed"
+  },
+  "dashboard": {
+    "update_on_run": true,
+    "docs_folder": "./docs"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "./logs/system.log",
+    "keep_trade_history": true
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2026-04-14T18:16:08.828557",
+    "symbols_scanned": 13,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 9515.08,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-14T18:17:21.169300",
+    "symbols_scanned": 13,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 9515.08,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-14T18:18:25.219517",
+    "symbols_scanned": 13,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 9515.08,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-14T18:37:26.972177",
+    "symbols_scanned": 13,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 10733.57,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-15T08:21:52.106240",
+    "symbols_scanned": 13,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 10733.57,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-15T18:17:23.271743",
+    "symbols_scanned": 49,
+    "signals_generated": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 6591.75,
+    "ai_available": false,
+    "status": "failed"
+  },
+  {
+    "timestamp": "2026-04-15T18:17:49.885292",
+    "symbols_scanned": 54,
+    "signals_generated": 20,
+    "trades_opened": 0,
+    "trades_closed": 3,
+    "portfolio_equity": 11071.56,
+    "ai_available": true,
+    "status": "completed"
+  },
+  {
+    "timestamp": "2026-04-15T18:19:56.307576",
+    "symbols_scanned": 27,
+    "signals_generated": 7,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "portfolio_equity": 11071.56,
+    "ai_available": true,
+    "status": "completed"
+  }
+]

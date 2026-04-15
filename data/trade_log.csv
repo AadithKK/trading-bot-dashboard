@@ -1,0 +1,4 @@
+timestamp,symbol,action,shares,entry_price,exit_price,realized_pnl,realized_pnl_percent,signal_score,confidence,close_reason,holding_days
+2026-04-15T18:17:49.846355,AAPL,BUY,8.6794,185.5,266.43,702.42,43.63,85,85,take_profit,0
+2026-04-15T18:17:49.850241,NVDA,BUY,1.5635,875.3,198.87,-1057.6,-77.28,85,85,stop_loss,0
+2026-04-15T18:17:49.853308,TSLA,BUY,4.7364,245.6,391.95,693.17,59.59,85,85,take_profit,0

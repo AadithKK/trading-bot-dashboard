@@ -1,0 +1,407 @@
+[
+  {
+    "symbol": "AAPL",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 266.43,
+    "change": 2.94,
+    "volume": 1000000,
+    "volume_ratio": 3753.33
+  },
+  {
+    "symbol": "MSFT",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 411.22,
+    "change": 4.61,
+    "volume": 1000000,
+    "volume_ratio": 2431.79
+  },
+  {
+    "symbol": "TSLA",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 391.95,
+    "change": 7.62,
+    "volume": 1000000,
+    "volume_ratio": 2551.35
+  },
+  {
+    "symbol": "CRM",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 177.6,
+    "change": 3.67,
+    "volume": 1000000,
+    "volume_ratio": 5630.63
+  },
+  {
+    "symbol": "PYPL",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 49.57,
+    "change": 3.34,
+    "volume": 1000000,
+    "volume_ratio": 20173.49
+  },
+  {
+    "symbol": "ADBE",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 244.66,
+    "change": 3.79,
+    "volume": 1000000,
+    "volume_ratio": 4087.3
+  },
+  {
+    "symbol": "AVGO",
+    "score": 75,
+    "components": {
+      "price_action": 30,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 396.72,
+    "change": 4.19,
+    "volume": 1000000,
+    "volume_ratio": 2520.67
+  },
+  {
+    "symbol": "GOOGL",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 337.12,
+    "change": 1.26,
+    "volume": 1000000,
+    "volume_ratio": 2966.3
+  },
+  {
+    "symbol": "NVDA",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 198.87,
+    "change": 1.2,
+    "volume": 1000000,
+    "volume_ratio": 5028.41
+  },
+  {
+    "symbol": "GOOG",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 334.47,
+    "change": 1.18,
+    "volume": 1000000,
+    "volume_ratio": 2989.8
+  },
+  {
+    "symbol": "V",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 315.91,
+    "change": 1.46,
+    "volume": 1000000,
+    "volume_ratio": 3165.46
+  },
+  {
+    "symbol": "MCD",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 306.26,
+    "change": 1.0,
+    "volume": 1000000,
+    "volume_ratio": 3265.2
+  },
+  {
+    "symbol": "NFLX",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 107.71,
+    "change": 1.35,
+    "volume": 1000000,
+    "volume_ratio": 9284.19
+  },
+  {
+    "symbol": "INTC",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 64.94,
+    "change": 1.77,
+    "volume": 1000000,
+    "volume_ratio": 15398.83
+  },
+  {
+    "symbol": "AMD",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 258.12,
+    "change": 1.2,
+    "volume": 1000000,
+    "volume_ratio": 3874.17
+  },
+  {
+    "symbol": "ACN",
+    "score": 60,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 20,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 194,
+    "change": 1.91,
+    "volume": 1000000,
+    "volume_ratio": 5154.64
+  },
+  {
+    "symbol": "JPM",
+    "score": 40,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 0,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 305.93,
+    "change": -1.67,
+    "volume": 1000000,
+    "volume_ratio": 3268.72
+  },
+  {
+    "symbol": "HD",
+    "score": 40,
+    "components": {
+      "price_action": 15,
+      "volume": 25,
+      "momentum": 0,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 338.91,
+    "change": -1.11,
+    "volume": 1000000,
+    "volume_ratio": 2950.64
+  },
+  {
+    "symbol": "BA",
+    "score": 35,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 10,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 223.93,
+    "change": 0.07,
+    "volume": 1000000,
+    "volume_ratio": 4465.68
+  },
+  {
+    "symbol": "AMZN",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 248.5,
+    "change": -0.21,
+    "volume": 1000000,
+    "volume_ratio": 4024.14
+  },
+  {
+    "symbol": "BRK.B",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 474.09,
+    "change": -0.72,
+    "volume": 1000000,
+    "volume_ratio": 2109.3
+  },
+  {
+    "symbol": "JNJ",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 238.67,
+    "change": -0.6,
+    "volume": 1000000,
+    "volume_ratio": 4189.89
+  },
+  {
+    "symbol": "WMT",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 124.76,
+    "change": -0.23,
+    "volume": 1000000,
+    "volume_ratio": 8015.39
+  },
+  {
+    "symbol": "PG",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 143.38,
+    "change": -0.69,
+    "volume": 1000000,
+    "volume_ratio": 6974.47
+  },
+  {
+    "symbol": "XOM",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 149.01,
+    "change": -0.15,
+    "volume": 1000000,
+    "volume_ratio": 6710.96
+  },
+  {
+    "symbol": "KO",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 75.31,
+    "change": -0.78,
+    "volume": 1000000,
+    "volume_ratio": 13278.45
+  },
+  {
+    "symbol": "CSCO",
+    "score": 30,
+    "components": {
+      "price_action": 0,
+      "volume": 25,
+      "momentum": 5,
+      "volatility_penalty": 0,
+      "liquidity": 0
+    },
+    "price": 82.36,
+    "change": -0.3,
+    "volume": 1000000,
+    "volume_ratio": 12141.82
+  }
+]
