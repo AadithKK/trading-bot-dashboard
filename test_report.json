@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-04-15T18:49:45.944441",
+  "tests": {
+    "supabase_connection": "PASS",
+    "portfolio_data": "PASS",
+    "latest_equity": 300.0,
+    "latest_pnl": 0,
+    "signals_data": "PASS",
+    "dashboard_accessible": "PASS",
+    "data_consistency": "PASS",
+    "bot_execution": "PASS"
+  },
+  "summary": {
+    "total_tests": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "success_rate": "100.0%"
+  }
+}
