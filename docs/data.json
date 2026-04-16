@@ -39,14 +39,22 @@
       "pnl": 733.57,
       "win_rate": 66.67,
       "trades": 3
+    },
+    {
+      "timestamp": "2026-04-16T08:20:19.561338",
+      "equity": 300.0,
+      "cash": 300.0,
+      "pnl": 0,
+      "win_rate": 0,
+      "trades": 0
     }
   ],
   "latest": {
-    "timestamp": "2026-04-15T08:21:52.111028",
-    "equity": 10733.57,
-    "cash": 10733.57,
-    "pnl": 733.57,
-    "win_rate": 66.67,
-    "trades": 3
+    "timestamp": "2026-04-16T08:20:19.561338",
+    "equity": 300.0,
+    "cash": 300.0,
+    "pnl": 0,
+    "win_rate": 0,
+    "trades": 0
   }
 }

@@ -652,6 +652,31 @@
     </header>
 
     <div class="container">
+        <!-- Bot Status -->
+        <div class="card full-width" id="bot-status-card">
+            <div class="card-title">System Status</div>
+            <div class="metrics-grid">
+                <div class="metric" id="bot-health-metric">
+                    <div class="metric-label">Bot Health</div>
+                    <div class="metric-value" id="bot-health">🟢 Healthy</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Last Run</div>
+                    <div class="metric-value" id="last-run-time">--</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Critical Alerts</div>
+                    <div class="metric-value"><span id="critical-count">0</span></div>
+                </div>
+            </div>
+            <div id="alerts-container" style="margin-top: 20px; display: none;">
+                <div style="border-left: 3px solid var(--danger); padding: 16px; background: rgba(239, 68, 68, 0.1); border-radius: 8px;">
+                    <div style="font-weight: 700; color: var(--danger); margin-bottom: 8px;">Recent Critical Errors</div>
+                    <div id="alerts-list"></div>
+                </div>
+            </div>
+        </div>
+
         <!-- Key Metrics -->
         <div class="card full-width">
             <div class="card-title">Portfolio Performance</div>
@@ -769,10 +794,14 @@
 
         async function updateDashboard() {
             try {
-                const [portfolioData, signalsData] = await Promise.all([
+                const [portfolioData, signalsData, alertsData] = await Promise.all([
                     fetchData('portfolio_history', 30),
-                    fetchData('signals_history', 20)
+                    fetchData('signals_history', 20),
+                    fetchData('bot_alerts', 10)
                 ]);
+
+                // Update bot status first
+                updateBotStatus(portfolioData, alertsData);
 
                 if (!portfolioData || portfolioData.length === 0) {
                     showError('No portfolio data available. Make sure the bot is syncing to Supabase.');
@@ -788,6 +817,55 @@
                 updateTimestamp();
             } catch (error) {
                 showError('Error updating dashboard: ' + error.message);
+            }
+        }
+
+        function updateBotStatus(portfolioData, alerts) {
+            const healthMetric = document.getElementById('bot-health-metric');
+            const healthValue = document.getElementById('bot-health');
+            const alertsContainer = document.getElementById('alerts-container');
+            const alertsList = document.getElementById('alerts-list');
+            const criticalCount = document.getElementById('critical-count');
+            const lastRunTime = document.getElementById('last-run-time');
+
+            if (!portfolioData || portfolioData.length === 0) {
+                healthMetric.className = 'metric negative';
+                healthValue.textContent = '🔴 No Data';
+                lastRunTime.textContent = '--';
+                criticalCount.textContent = '0';
+                return;
+            }
+
+            // Check for critical alerts
+            const criticalAlerts = alerts ? alerts.filter(a => a.is_critical === true) : [];
+
+            if (criticalAlerts.length > 0) {
+                healthMetric.className = 'metric negative';
+                healthValue.textContent = '🔴 Error';
+                alertsContainer.style.display = 'block';
+
+                let html = '';
+                criticalAlerts.slice(0, 3).forEach(alert => {
+                    const date = new Date(alert.timestamp).toLocaleString();
+                    html += `<div style="margin-bottom: 12px; font-size: 13px;">
+                        <div style="color: var(--text); margin-bottom: 4px;"><strong>${alert.error_type}</strong> - ${date}</div>
+                        <div style="color: var(--text-secondary); font-size: 12px;">${alert.message}</div>
+                    </div>`;
+                });
+                alertsList.innerHTML = html;
+            } else {
+                healthMetric.className = 'metric positive';
+                healthValue.textContent = '🟢 Healthy';
+                alertsContainer.style.display = 'none';
+            }
+
+            criticalCount.textContent = criticalAlerts.length;
+
+            // Show last run time
+            const latest = portfolioData[0];
+            if (latest && latest.timestamp) {
+                const lastRun = new Date(latest.timestamp);
+                lastRunTime.textContent = lastRun.toLocaleTimeString();
             }
         }
 
